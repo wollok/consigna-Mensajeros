@@ -15,9 +15,9 @@ Desarrollar y probar un programa que me permita saber si mi paquete puede ser en
 
 **Mensajeros posibles:**
 
-- Roberto: Roberto viaja en bicicleta o camión. Si viaja en bicicleta, el peso que cuenta es el suyo propio más 1, que es lo que pesa la bici. Si viaja en camión, su peso más media tonelada por cada acoplado. Roberto no tiene un mango, gracias que tiene cubiertas, y no puede llamar a nadie.
+- Roberto: Roberto viaja en bicicleta o camión. Si viaja en bicicleta, el peso que cuenta es el suyo propio más 1, que es lo que pesa la bici. Si viaja en camión, el peso es el propio más del del camión, a razón de media tonelada por cada acoplado. Roberto no tiene un mango, gracias que tiene cubiertas, y no puede llamar a nadie.
 - Chuck Norris: Chuck norris pesa 900 kg y puede llamar a cualquier persona del universo con sólo llevarse el pulgar al oído y el meñique a la boca
-- Neo vuela, así que no pesa nada. Y anda con celular, el muy canchero. El tema es que a veces no tiene crédito.
+- Neo vuela, así que no pesa nada. Y anda con celular, el muy canchero. El tema es que a veces no tiene crédito para hacer llamadas.
 
 **Tests**
 
@@ -46,9 +46,9 @@ Nuevos requerimientos para la mensajería.
 Se necesita saber:
 - Si el paquete puede ser entregado por la empresa de mensajería, es decir, si al menos uno de sus mensajeros puede entregar el paquete.
 - Si para la mensajería el paquete es fácil. El paquete es fácil cuando cualquiera de sus mensajeros puede entregarlo.
-- Saber los mensajeros candidatos de una mensajería para llevar un paquete, es decir, aquellos mensajeros que son capaces de llevar el paquete.
-- Saber si una mensajería tiene sobrepeso. Esto sucede si el promedio del peso de los mensajeros es superior a 500 Kg (Nota: Para el peso de Roberto se cuenta el transporte).
-- Hacer que la empresa de mensajería envíe un paquete. Para ello elige cualquier mensajero entre los que pueden enviarlo, y registra que fue enviado. En el caso de no haber nadie para enviarlo, debe informarse con un error descriptivo.
+- Saber los mensajeros livianos de la mensajería, es decir aquellos que pesan menos de 100 kg.
+- Saber si una mensajería tiene sobrepeso. Esto sucede si el promedio del peso de los mensajeros es superior a 500 Kg. 
+- Hacer que la empresa de mensajería envíe un paquete. Para ello elige cualquier mensajero entre los que pueden enviarlo, y registra que fue enviado.
 
 Cada punto debe tener mínimo un test
 
