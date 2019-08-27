@@ -1,12 +1,12 @@
-# Polimorfismo-Colecciones-Mensajeros-de-pelicula
-Ejercicio incremental, primera parte sin colecciones, segunda parte con mensajes basicos de coleccione, tercera parte con colecciones y bloques
+# Mensajeros de película
 
+### Ejercicio incremental: Polimorfismo - Colecciones - Colecciones con bloques 
 
-# Mensajeros de Película
+![](matrix.jpeg)
 
 ## Primera parte: Destinos y mensajeros
 
-Desarrollar y probar un programa que me permita saber si mi paquete puede ser entregado por un mensajero. Un paquete puede entregarse cuando el mensajero puede llegar al destino indicado y además el paquete está pago.
+Desarrollar y probar un programa que me permita saber si el paquete puede ser entregado por un mensajero. Un paquete puede entregarse cuando el mensajero puede llegar al destino indicado y además el paquete está pago.
 
 **Destinos posibles:**
 
@@ -22,8 +22,9 @@ Desarrollar y probar un programa que me permita saber si mi paquete puede ser en
 **Tests**
 
 Realizar una serie de tests, donde se prueben las diferentes situaciones, entre ellas:
-Que roberto (90kg) puede llevar un paquete que está pago en un camión que tiene un acoplado.
-Que neo con crédito no puede llevar un paquete que no está pago a la matrix.
+
+* Que roberto (90kg) puede llevar un paquete que está pago en un camión que tiene un acoplado.
+* Que neo con crédito no puede llevar un paquete que no está pago a la matrix.
 
 ## Segunda parte: Empresa de mensajería 
 
@@ -31,9 +32,9 @@ Ahora aparece una empresa de mensajería. Esta tiene un conjunto de mensajeros, 
 
 Se necesita poder hacer:
 
-- contratar a un mensajero
-- despedir a un mensajero
-- despedir a todos los mensajeros
+- Contratar a un mensajero
+- Despedir a un mensajero
+- Despedir a todos los mensajeros
 - Analizar si la mensajeria es grande (si tiene mas de dos mensajeros)
 - Consultar si el paquete puede ser entregado por el primer empleado de la la empresa de mensajería. 
 - Saber el peso del último mensajero de la empresa. 
@@ -42,16 +43,19 @@ Se necesita poder hacer:
 
 ## Tercera parte: Mensajería  recargada
 
-Nuevos requerimientos para la mensajería.
-Se necesita saber:
-- Si el paquete puede ser entregado por la empresa de mensajería, es decir, si al menos uno de sus mensajeros puede entregar el paquete.
-- Si para la mensajería el paquete es fácil. El paquete es fácil cuando cualquiera de sus mensajeros puede entregarlo.
-- Saber los mensajeros livianos de la mensajería, es decir aquellos que pesan menos de 100 kg.
+Nuevos requerimientos para la mensajería. Surgen otros paquetes que la empresa necesita enviar:
+- Paquetito: es gratis, o sea, simpre está pago. Ademas, cualquier mensajero lo puede llevar.
+- Paqueton viajero: tiene múltiples destinos. Su precio es 100$ por cada destino. Se puede ir pagando parcialmente y se debe pagar totalmente para poder ser enviado. Además, el mensajero debe poder pasar por todos los destinos.
+- Se sabe que el paquete original tiene un precio determinado en $50.
+
+Se necesita realizar:
+- Averiguar si un paquete puede ser entregado por la empresa de mensajería, es decir, si al menos uno de sus mensajeros puede entregar el paquete.
+- Obtener todos los mensajeros que pueden llevar un paquete dado. 
 - Saber si una mensajería tiene sobrepeso. Esto sucede si el promedio del peso de los mensajeros es superior a 500 Kg. 
-- Hacer que la empresa de mensajería envíe un paquete. Para ello elige cualquier mensajero entre los que pueden enviarlo, y registra que fue enviado.
+- Hacer que la empresa de mensajería envíe un paquete. Para ello elige cualquier mensajero entre los que pueden enviarlo y si no puede lo agrega a los paquetes pendientes.
+- Dado un conjunto de paquetes, enviarlos a todos, de igual manera.
+- Encontrar el paquete pendiente más caro y enviarlo, actualizando los pendientes en caso de haberlo podido enviar.
 
 Cada punto debe tener mínimo un test
 
-Agregar un nuevo mensajero y garantizar que todo siga funcionando
-
-
+Agregar un nuevo mensajero y un nuevo paquete y garantizar que todo siga funcionando
